@@ -1,0 +1,21 @@
+.Brands {
+  background-color: #16091b;
+  padding: 60px 80px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.Brands_sub {
+  margin: 10px 0px;
+}
+@media screen and (max-width: 1024px) {
+  .Brands {
+    padding: 50px 20px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .Brands {
+    padding: 50px 80px;
+  }
+}

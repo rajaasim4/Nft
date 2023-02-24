@@ -1,0 +1,14 @@
+.SlideCard {
+  /* width: 300px; */
+}
+@media screen and (max-width: 768px) {
+  .Slide_card_img {
+    background-size: 100% 100%;
+  }
+  .SlideCard {
+    width: 100%;
+  }
+  .Slide_card_right p {
+    font-size: 20px;
+  }
+}

@@ -1,0 +1,121 @@
+footer {
+  position: relative;
+  background-color: #251928;
+  padding: 40px 20px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.footer_left,
+.footer_right {
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.footer_sub_1 img {
+  width: 150px;
+  height: 150px;
+  object-fit: contain;
+}
+.footer_sub_2 {
+  width: 50%;
+}
+.footer_social_copyright {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+  padding: 10px 10px;
+}
+.footer_social {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.footer_social svg {
+  width: 32px;
+  height: 36px;
+  color: #d53d5c;
+  cursor: pointer;
+  margin: 0px 5px;
+  transition: 0.3s linear;
+}
+.footer_social svg:hover {
+  color: white;
+}
+.footer_sub h5 {
+  font-family: var(--workfont);
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 35px;
+  color: #f5fbf2;
+}
+.footer_sub ul {
+  list-style: none;
+}
+.footer_sub ul li a {
+  font-family: var(--workfont);
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 50px;
+  color: #96839b;
+}
+.footer_sub p {
+  font-family: var(--workfont);
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 36px;
+  color: #96839b;
+}
+@media screen and (max-width: 1024px) {
+  .footer_social_copyright {
+    width: max-content;
+  }
+}
+@media screen and (max-width: 768px) {
+  footer {
+    flex-direction: column;
+    padding: 80px 10px;
+  }
+  .footer_left,
+  .footer_right {
+    width: 100%;
+  }
+  .footer_left {
+    flex-direction: column;
+    margin-bottom: 20px;
+  }
+
+  .footer_social_copyright {
+    position: absolute;
+    bottom: 0;
+
+    left: 33%;
+
+    align-items: center;
+  }
+  .footer_social {
+    justify-content: center;
+  }
+}
+@media screen and (max-width: 426px) {
+  .footer_right {
+    margin-bottom: 30px;
+  }
+  .footer_sub_2 {
+    width: 90%;
+    text-align: center;
+  }
+  .footer_social_copyright {
+    left: 16%;
+  }
+}
+@media screen and (max-width: 320px) {
+  .footer_social_copyright {
+    left: 5%;
+  }
+}

@@ -1,0 +1,77 @@
+.Subscribe {
+  height: 450px;
+  width: 100%;
+  background-color: var(--maincolor);
+  background-image: url("../../assets/Pattern.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.Subscribe h2 {
+  font-family: var(--oxiumsfont);
+  font-style: normal;
+  font-weight: 700;
+  font-size: 64px;
+  line-height: 130px;
+  /* or 203% */
+
+  text-align: center;
+
+  color: #f5fbf2;
+}
+.Subscribe_input {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 50%;
+  height: 15px;
+  border: 1px solid #ffce4e;
+  height: 60px;
+}
+.Subscribe_input_main {
+  height: 60px;
+  /* border: 1px solid #ffce4e; */
+  width: 50%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.Subscribe_input input {
+  border: 0;
+  outline: 0;
+  background-color: transparent;
+  font-size: 18px;
+  width: 80%;
+  padding-left: 20px;
+  color: white;
+}
+@media screen and (max-width: 1024px) {
+  .Subscribe_input {
+    width: 70%;
+  }
+}
+@media screen and (max-width: 768px) {
+  .Subscribe h2 {
+    font-size: 45px;
+  }
+  .Subscribe_input {
+    border: 0;
+    flex-direction: column;
+    height: auto;
+  }
+  .Subscribe_input_main {
+    width: 100%;
+    margin-bottom: 30px;
+    border: 1px solid #ffce4e;
+  }
+}
+@media screen and (max-width: 426px) {
+  .Subscribe h2 {
+    font-size: 36px;
+    line-height: 45px;
+    margin-bottom: 20px;
+  }
+}

@@ -1,0 +1,128 @@
+.Card {
+  width: 495px;
+  background-color: orange;
+  padding: 20px 30px;
+  background: rgba(79, 70, 78, 0.45);
+  backdrop-filter: blur(30px);
+}
+.Card_img {
+  /* background-image: url("../../assets/c1.png"); */
+  height: 359px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  position: relative;
+}
+.Card_time {
+  position: absolute;
+  background: linear-gradient(
+    125.33deg,
+    #8613a5 18.61%,
+    rgba(250, 250, 250, 0.65) 137.4%
+  );
+  opacity: 0.95;
+  box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.12);
+  backdrop-filter: blur(45px);
+  left: 0;
+  bottom: 0;
+  padding: 16px 40px;
+}
+.Card_time p {
+  font-family: var(--oxiumsfont);
+  font-style: normal;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 35px;
+  letter-spacing: 0.02em;
+  color: #f5fbf2;
+}
+.Card_name_details {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 0px;
+}
+.Card_details_left {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.Card_details_left p {
+  font-family: var(--workfont);
+  font-style: normal;
+  font-weight: 500;
+  font-size: 28px;
+  line-height: 35px;
+  color: #f5fbf2;
+  margin-left: 10px;
+}
+.Card_details_left p span {
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 35px;
+  display: flex;
+  align-items: center;
+  color: #bdaac1;
+}
+.Card_details_right {
+  font-family: var(--workfont);
+  font-style: normal;
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 35px;
+  color: #76607a;
+}
+.Card_details_right svg {
+  vertical-align: middle;
+  margin-right: 8px;
+}
+.Card_bid {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 0px;
+}
+.Card_bid p {
+  font-family: var(--workfont);
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 35px;
+  color: #c6bfc8;
+}
+.Card_bid span {
+  font-family: "Oxanium";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 35px;
+  color: #f5fbf2;
+}
+@media screen and (max-width: 1024px) {
+  .Card {
+    margin-top: 20px;
+  }
+}
+@media screen and (max-width: 426px) {
+  .Card_img {
+    background-size: 100% 100%;
+  }
+  .Card_time {
+    height: 50px;
+    padding: 11px 40px;
+  }
+  .Card_bid span {
+    font-size: 24px;
+  }
+  .Card_bid p {
+    font-size: 20px;
+  }
+  .Card_details_left p {
+    font-size: 18px;
+  }
+  .Card_details_left p span {
+    font-size: 14px;
+  }
+  .Card_details_right span {
+    font-size: 24px;
+  }
+}

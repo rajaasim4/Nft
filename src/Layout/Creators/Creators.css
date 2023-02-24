@@ -1,0 +1,54 @@
+.Creators {
+  padding: 50px 20px;
+  background-color: var(--maincolor);
+}
+.Creators_main {
+  width: 90%;
+  margin: 20px auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.CreatorsCard {
+  width: 608px;
+  height: 156px;
+  background-color: #302034;
+  margin-bottom: 20px;
+  padding: 0px 10px;
+}
+.CreatorsCard_right {
+  border-left: 1px solid orange;
+  padding: 5px 30px;
+}
+.CreatorsCard_right span {
+  font-family: var(--oxiumsfont);
+  font-style: normal;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 35px;
+  letter-spacing: 0.05em;
+  color: #f5fbf2;
+}
+.Creators_card_btn {
+  display: block;
+  margin: auto;
+  padding: 20px 60px;
+}
+@media screen and (max-width: 1024px) {
+  .Creators_main {
+    justify-content: center;
+  }
+}
+@media screen and (max-width: 426px) {
+  .CreatorsCard_right span {
+    font-size: 25px;
+  }
+  .CreatorsCard_right {
+    padding: 0px 4px;
+  }
+  .CreatorsCard {
+    padding: 0px 5px;
+    padding-top: 10px;
+  }
+}

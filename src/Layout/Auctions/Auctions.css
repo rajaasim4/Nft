@@ -1,0 +1,36 @@
+.Auctions {
+  background-color: var(--maincolor);
+  background: linear-gradient(
+    336.61deg,
+    #161516 16.25%,
+    rgba(37, 25, 40, 0) 91.6%
+  );
+  background: linear-gradient(
+    90deg,
+    rgba(34, 34, 37, 1) 0%,
+    rgba(35, 37, 37, 1) 100%
+  );
+  padding: 50px 0px;
+}
+.Auctions_main {
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.Auctions_btn {
+  width: 15%;
+  display: block;
+  margin: 30px auto;
+}
+@media screen and (max-width: 768px) {
+  .Auctions_btn {
+    width: 30%;
+  }
+}
+@media screen and (max-width: 426px) {
+  .Auctions_btn {
+    width: 50%;
+  }
+}

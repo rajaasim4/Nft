@@ -1,0 +1,253 @@
+.Banner {
+  width: 100%;
+  /* background-color: #e5e5e5; */
+  /* background: rgba(79, 70, 78, 0.45); */
+  background: #16091b;
+  backdrop-filter: blur(30px);
+  display: flex;
+  /* justify-content: center; */
+  align-items: center;
+  position: relative;
+  padding: 20px 0px;
+}
+.Banner_left {
+  width: 50%;
+  padding: 28px 65px;
+}
+.Banner_left h1 {
+  font-family: "Oxanium", cursive;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 85px;
+  line-height: 130px;
+  color: #f5fbf2;
+}
+.Banner_left h1 span {
+  color: #ffce4e;
+}
+.Banner_btns {
+  width: 450px;
+  /* background: #000; */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.Banner_btns button:last-child {
+  padding: 18px 40px;
+}
+.white_btn_bg {
+  color: white;
+}
+.yellow_bg_btn {
+  background-color: #ffce4e;
+  padding: 18px 34px;
+  border: none;
+  font-family: "Work Sans", sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 21px;
+  color: black;
+  cursor: pointer;
+}
+.Banner_details {
+  margin-top: 40px;
+  display: flex;
+  justify-content: space-between;
+  width: 90%;
+}
+.Banner_details_sub h3 {
+  font-family: var(--oxiumsfont);
+  /* font-family: "Oxanium", cursive; */
+  font-style: normal;
+  font-weight: 700;
+  font-size: 62px;
+  line-height: 78px;
+  color: #f5fbf2;
+}
+.Banner_details_sub span {
+  font-family: var(--workfont);
+  /* font-family: "Work Sans", sans-serif; */
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 35px;
+  color: #9b9e9a;
+}
+
+.Banner_right {
+  width: 50%;
+  padding: 20px 100px;
+  background: rgba(79, 70, 78, 0.45);
+  backdrop-filter: blur(30px);
+}
+.Banner_right_Card_img {
+  height: 650px;
+  background-image: url("../../assets/Banner_img.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-top: 20px;
+  display: flex;
+  justify-content: center;
+  /* align-items: center; */
+}
+.Banner_card_time {
+  background: linear-gradient(
+    92.8deg,
+    rgba(255, 137, 61, 0.09) -52.37%,
+    rgba(250, 250, 250, 0.9) 137.41%
+  );
+  opacity: 0.95;
+  box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.12);
+  backdrop-filter: blur(45px);
+  width: 80%;
+  height: 100px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.Banner_card_time p {
+  font-family: var(--oxiumsfont);
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 22px;
+  letter-spacing: 0.08em;
+  text-transform: capitalize;
+
+  color: #e4dee7;
+}
+.Banner_card_time p span {
+  font-weight: 900;
+  font-size: 32px;
+}
+.Banner_Card_details {
+  height: 118px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px 20px;
+  background-color: white;
+}
+.Banner_Card_details h4 {
+  font-family: var(--oxiumsfont);
+  font-style: normal;
+  font-weight: 600;
+  font-size: 28px;
+  line-height: 35px;
+  letter-spacing: 0.07em;
+
+  color: #16091b;
+}
+.Banner_Card_details h4 span {
+  font-weight: 400;
+  font-family: var(--workfont);
+  font-size: 24px;
+  color: #594d5e;
+}
+
+.Banner_arrow {
+  width: 65px;
+  height: 65px;
+  background: rgba(79, 70, 78, 0.45);
+  backdrop-filter: blur(30px);
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  bottom: 0;
+  left: 48%;
+}
+.Banner_arrow svg {
+  color: white;
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+@media screen and (max-width: 1024px) {
+  .Banner_left {
+    padding: 3px 25px;
+  }
+  .Banner_right {
+    padding: 60px 28px;
+  }
+  .Banner_left h1 {
+    font-size: 65px;
+    line-height: 85px;
+    margin-bottom: 30px;
+  }
+  .Banner_details_sub h3 {
+    font-size: 45px;
+  }
+  .Banner_details_sub span {
+    font-size: 20px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .Banner {
+    flex-direction: column;
+  }
+  .Banner_left,
+  .Banner_right {
+    width: 100%;
+  }
+  .Banner_right {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .Banner_right_Card {
+    width: 90%;
+  }
+  .Banner_arrow {
+    display: none;
+  }
+}
+@media screen and (max-width: 426px) {
+  .Banner_btns {
+    width: 100%;
+    flex-wrap: wrap;
+  }
+  .Banner_left h1 {
+    font-size: 42px;
+    line-height: 63px;
+    /* or 150% */
+
+    text-align: center;
+  }
+  .Banner_details_sub h3 {
+    font-size: 36px;
+  }
+  .Banner_details_sub span {
+    font-size: 16px;
+  }
+  .Banner_details {
+    width: 100%;
+  }
+  .Banner_Card_details h4 {
+    font-size: 18px;
+  }
+  .Banner_Card_details h4 span {
+    font-size: 16px;
+  }
+  .Banner_card_time p {
+    font-size: 14px;
+  }
+  .Banner_card_time {
+    height: 77px;
+  }
+  .Banner_card_time p span {
+    font-size: 18px;
+  }
+  .Banner_right{
+    padding: 60px 5px;
+  }
+}
+@media screen and (max-width: 320px) {
+  .Banner_btns button:last-child {
+    margin-top: 20px;
+  }
+  .Banner_btns {
+    justify-content: center;
+  }
+}

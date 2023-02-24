@@ -1,0 +1,17 @@
+@import url("https://fonts.googleapis.com/css2?family=Sora:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Oxanium:wght@200&family=Sora:wght@300&display=swap");
+
+* {
+  margin: 0px;
+  padding: 0px;
+  text-decoration: none;
+  box-sizing: border-box;
+}
+ul {
+  list-style: none;
+}
+:root {
+  --oxiumsfont: "Oxanium", cursive;
+  --workfont: "Work Sans", sans-serif;
+  --maincolor: #16091b;
+}
